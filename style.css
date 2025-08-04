@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: monospace, sans-serif;
+}
+
+h1, p {
+    text-align: center;
+}
+#game {
+  max-width: 500px;
+  max-height: 400px;
+  background-color: #ffffff;
+  color: #ffffff;
+  margin: 30px auto 0px;
+  padding: 10px;
+}
