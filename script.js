@@ -22,12 +22,12 @@ const rooms = [
         "button functions": [openDoor, tryToWakeUp, lookAround, goBack] 
     },
     {name: "Lobby",
-        text: "You are in the lobby of the mansion. There are doors to the north, east, and west. Which way do you go?",
-        "button text": ["Go north", "Go east", "Go west", "Go back"],
+        text: "You are in the lobby of the mansion. There are stairs to the north, the kitchen in the east, and a living room to the west. Which way do you go?",
+        "button text": ["up the stairs", "Go east", "Go west", "Go back"],
         "button functions": [goNorth, goEast, goWest, goBack]
     },
     {name: "Living Room",  
-        text: "You are in the living room. There is a fireplace and a couch. There is a door to the north. Which way do you go?",
+        text: "You are in the living room. There is a fireplace and an old couch. There are paintings and some creaking noises. You find a page from a diary on the floor. It appears to be torn out, but empty.",
         "button text": ["Go north", "Go south", "Look around", "Go back"],
         "button functions": [goNorth, goSouth, lookAround, goBack]
     },
