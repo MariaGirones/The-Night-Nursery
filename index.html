@@ -7,33 +7,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <body>
-         <h1>🧟The Night Nursery</h1>
-            <p>Welcome to the Night Nursery - Prepare for a chilling adventure!</p>
-            <p>- do not run out of light -</p>
-            <p>light = life</p>
-        <div id="game">
-            <div id="stats">
-                <span class="stat"><strong>Floor: <span id="floorNumberTxt"></span></strong>Porch</span>
-                <span class="stat"><strong><span id="roomNumberTxt">Room: </span></strong>0</span>
-                <span class="stat"><strong><span id="healthTxt">Health: </span></strong>100</span>
-                <span class="stat"><strong><span id="lampNumberTxt">Lamps: </span></strong>0</span>
-            </div>
-            <div id="controls">
-                <button id="button1">Open door</button>
-                <button id="button2">Try to wake up</button>
-                <button id="button3">Look around</button>
-                <button id="button4">run</button>
-            </div> 
-            <div id="monsterStats">
-                 <span class="stat">Monster Name: <strong><span id="monsterName"></span></strong></span>
-                 <span class="stat">Health: <strong><span id="monsterHealth"></span></strong></span>
-            </div> 
-            <div id="text">
-                Is this a dream? You stand on the porch of an old mansion. The door waits before you. Will you open it? Use the buttons above.
-            </div>
+    <h1>🧟The Night Nursery</h1>
+    <p>Welcome to the Night Nursery - Prepare for a chilling adventure!</p>
+    <p>- do not run out of light -</p>
+    <p>light = life</p>
+    <div id="game">
+        <div id="stats">
+            <span class="stat" id="roomNumberTxt"></span>
+            <span class="stat" id="healthTxt"></span>
+            <span class="stat" id="lampNumberTxt"></span>
         </div>
-         <script src="./script.js"></script>
-    </body>
+        <div id="controls">
+            <button id="button1">Open door</button>
+            <button id="button2">Try to wake up</button>
+            <button id="button3">Look around</button>
+            <button id="button4">Go back</button>
+        </div> 
+        <div id="monsterStats">
+            <span class="stat">Monster Name: <strong><span id="monsterName"></span></strong></span>
+            <span class="stat">Health: <strong><span id="monsterHealth"></span></strong></span>
+        </div> 
+        <div id="text">
+            Is this a dream? You stand on the porch of an old mansion. The door waits before you. Will you open it? Use the buttons above.
+        </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>
