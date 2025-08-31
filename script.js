@@ -18,8 +18,8 @@ let previousRoom = null; // keep track of where we came from
 const rooms = [
     {name: "Front Porch",
         text: "Is this a dream? You stand on the porch of an old mansion. The door waits before you. Will you open it?",
-        "button text": ["Open door", "Try to wake up", "Look around", "Go back"],
-        "button functions": [openDoor, tryToWakeUp, lookAround, goBack] 
+        "button text": ["Open door", "Try to wake up", "Look around", "Run"],
+        "button functions": [openDoor, tryToWakeUp, lookAround, run] 
     },
     {name: "Lobby",
         text: "You are in the lobby of the mansion. There are stairs to the north, the kitchen in the east, and a living room to the west. Which way do you go?",
@@ -118,3 +118,4 @@ function openFridge() { text.innerHTML = "The fridge creaks open... nothing but 
 // Initialize game
 update(room);
 
+//ok arreglar rooms que ya estan y agregar mas y agregar funcion de lampara
