@@ -46,10 +46,10 @@ const rooms = [
         "button functions": [openDoor, tryToWakeUp, lookAround, run] 
     },
     {name: "Lobby",
-        text: "You step into the lobby. The air is heavy, swollen with damp rot. " +
+        text: "You step into the Lobby. The air is heavy, swollen with damp rot. " +
         "It clings to your tongue like spoiled meat. Every breath feels borrowed. " +
         "Something drips in the dark, steady, patient — waiting.",
-        "button text": ["Go upstairs", "Go east", "Go west", "Go back"],
+        "button text": ["Go upstairs", "The Kitchen", "Living Room", "Go back"],
         "button functions": [goNorth, goEast, goWest, goBack]
     },
     {name: "Living Room",  
@@ -232,3 +232,8 @@ function endGame() {
 
 // Initialize game
 update(room);
+
+//add some mini games in floor 2 and 3 and some boses. Mini games give you lamps, 2nd and 3rd floor are harder than first.They have monsters. 
+//Add sounds and music.
+
+//Add a save feature.
