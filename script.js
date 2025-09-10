@@ -67,7 +67,13 @@ const rooms = [
         text: "You run into a graveyard. The moonlight casts jagged shadows. The earth seems to breathe. Footsteps echo behind you.",
         "button text": ["Watch your back", "Listen closely", "Run faster", "Look back"],
         "button functions": [zombieChase, zombieNoise, zombieFace, zombieDeath]
-    }
+    },
+    // More rooms can be added here
+    {name: "Floor 2",
+        text: "You are on the second floor. The air is colder here, and the shadows seem to move. You see a long hallway with several doors.",
+        "button text": ["Go to Room 1", "Go to Room 2", "Go to Room 3", "Go back"],
+        "button functions": [EnterRoom2_1, EnterRoom2_2, EnterRoom2_3, goBack]
+    },
 ];
 
 // Start at room 0 (Front Porch)
@@ -146,11 +152,22 @@ function goBack() {
         text.innerHTML = "There's nowhere to go back to!";
     }
 }
+function EnterRoom2_1() { 
+    text.innerHTML = "You enter Room 1 on Floor 2. It's eerily quiet. (More content to be added)";
+}
+function EnterRoom2_2() { 
+    text.innerHTML = "You enter Room 2 on Floor 2. Shadows flicker at the edge of your vision. (More content to be added)";
+}
+function EnterRoom2_3() { 
+    text.innerHTML = "You enter Room 3 on Floor 2. A chill runs down your spine. (More content to be added)";
+}
 
 // Navigation functions
 function goNorth() { 
     previousRoom = roomNumber;
-    text.innerHTML = "The stairs groan... but collapse halfway. Splinters rain down like teeth. (No new room yet)";
+    roomNumber = 5; // Floor 2 (check index in rooms array!)
+    room = rooms[roomNumber];
+    update(room);
 }
 function goEast() { 
     previousRoom = roomNumber;
@@ -191,7 +208,7 @@ function openFridge() {
     text.innerHTML += "<br><br>You stagger back from the fridge.";
 }
 
-// Graveyard – Zombie endings
+// Graveyard – Zombie endings DONE
 function zombieChase() {
     text.innerHTML =  "You whirl around. The sound of footsteps doesn’t stop — it multiplies. " +
         "Something is running at you, fast, running like a starving dog. " +
@@ -232,6 +249,7 @@ function endGame() {
 
 // Initialize game
 update(room);
+monsterStats.style.display = "none";
 
 //add some mini games in floor 2 and 3 and some boses. Mini games give you lamps, 2nd and 3rd floor are harder than first.They have monsters. 
 //Add sounds and music.
